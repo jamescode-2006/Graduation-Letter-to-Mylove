@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special graduation celebration for my love">
+    <title>Congratulations, My Love 💖</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/background-music.mp3" type="audio/mpeg">
+        <source src="music/background-music.ogg" type="audio/ogg">
+        <source src="music/background-music.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Control Button -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle background music" title="Toggle Music">
+        🔇
+    </button>
+
+    <!-- Floating Hearts Animation -->
+    <div class="hearts-container" aria-hidden="true">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Congratulations, My Love 💖</h1>
+            <p class="hero-subtitle">This is your special day</p>
+            <div class="nav-buttons">
+                <button id="messageBtn" class="nav-btn message-btn" aria-label="View love letter">
+                    💌 Message
+                </button>
+                <button id="albumBtn" class="nav-btn album-btn" aria-label="View photo album">
+                    📸 Album
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section id="message" class="message-section">
+        <div class="message-container">
+            <button id="homeBtn1" class="home-btn" aria-label="Go back to home">
+                🏠 Home
+            </button>
+            <h2 class="section-title">A Love Letter For You 💌</h2>
+            <div class="message-box">
+                <p id="typedText" class="typed-text" role="region" aria-live="polite"></p>
+                <span class="cursor" aria-hidden="true">|</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Album Section -->
+    <section id="album" class="album-section">
+        <div class="album-container">
+            <button id="homeBtn2" class="home-btn" aria-label="Go back to home">
+                🏠 Home
+            </button>
+            <h2 class="section-title">Your Beautiful Graduation Picture</h2>
+            <p class="section-subtitle">Every moment with you is treasured</p>
+
+            <div id="gallery" class="gallery">
+                <article class="gallery-item">
+                    <img src="images/5aab064b-6ce3-426c-ab00-010d9e296dc2.jpg" 
+                         alt="Beautiful graduation moment" 
+                         loading="lazy">
+                </article>
+                <article class="gallery-item">
+                    <img src="images/67fa0943-117f-42b7-8dcc-07023c980b3c.jpg" 
+                         alt="Graduation celebration photo" 
+                         loading="lazy">
+                </article>
+                <article class="gallery-item">
+                    <img src="images/8e6a85af-258e-409c-89d4-18bdfd964197.jpg" 
+                         alt="Special graduation memory" 
+                         loading="lazy">
+                </article>
+                <article class="gallery-item">
+                    <img src="images/95b8fdc3-413c-473d-af99-97bcfa172eb9.jpg" 
+                         alt="Proud graduate moment" 
+                         loading="lazy">
+                </article>
+                <article class="gallery-item">
+                    <img src="images/cef6c854-1156-4d55-9db5-1ad133787ac1.jpg" 
+                         alt="Cherished graduation photo" 
+                         loading="lazy">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made with love 💕 by: James Lloyd</p>
+            <p class="footer-date">Graduation 2026</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
